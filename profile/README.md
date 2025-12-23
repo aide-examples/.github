@@ -1,4 +1,4 @@
-**AIDE examples** is a series of applications demonstrating how to build professional software using agent-based development.
+<img src="AIDE.jpg" align="left" style="margin-right:20px;width:200px;"/> **AIDE examples** is a series of applications demonstrating how to build professional software using agent-based development.
 
 Our mission is to explore the intersection of AI and software engineering, providing practical examples for educational purpose.
 
