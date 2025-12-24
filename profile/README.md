@@ -46,7 +46,7 @@ The second AIDE application could be a technical system that transforms the ener
 The classic models of *human-in-the-loop* and *human-out-of-the-loop* are not suitable for AIDE.
 The former is not suitable because we thereby degrade the agent to a code-completion editor, the latter is not suitable because everything slips away from us.
 
-<img src="/docs/aide/Loop.jpg" align="left" width="180" style="margin-right: 15px;">
+<img src="./Loop.jpg" align="left" width="180" style="margin-right: 15px;">
 
 We see *human-sporadically-in-the-loop* and *human-periodically-in-the-loop* as alternatives.
 *Sporadically* would mean that the human dives into the world of technical artifacts rather randomly or, for example, on the occasion of an occurring error, identifies problems, perhaps even solves them themselves. However, it turns out that with increasing distance from the code, the human tends to increasingly desperately urge the AI to fix the error. This often results in catastrophic tinkering and superficial fixing, old errors reoccur, and both together lose the ground under their feet. Incidentally, they both tend to gloss over or even deny this circumstance.
