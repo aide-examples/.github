@@ -66,6 +66,25 @@ A good example of this is aviation. It's no coincidence that professional pilots
 
 ---
 
+## AIDE-Techkit : Building Blocks for Platform Construction
+
+A well designed software system clearly separates T-components and A-components, where T stands for TECHNICAL Architectue and A stands for APPLICATION Domain. Although there may be needs to intermix the physical manifestations of these components within artefacts (like introducing error handling code and logging at many places within the source code) conceptually T and A are different animals.
+
+- To understand WHAT a system does you focus on (A), to understand HOW it does it your focus is on (T). 
+- When maintaining a productive system you are more or less captured within (T) and work on extending and changing (A).
+- Changing (T) in a running system requires considerable amounts of re-engineerineg effort which in most cases is economically not worth doing - unless your platform depends on external components which come to the end of their supported life span.
+- When thinking about a new system the natural focus is on A-requirements but you need to be well aware of T-requirements (often called NFR = non-functional requirements).
+- When you start development of a new system you should begin with a rich and stable set of T components and a very tiny piece of A. This is the most critical phase of your project, because mistakes here a very expensive to correct.
+
+Our long term goal is to *provide T-building blocks for that phase* which work well together and can be selected according to your needs. We call it the AIDE-techkit. Our idea is to extract almost all application related code from our AIDE systems so that we end up with standardized reusable T-components. Standardized means: They follow a common philosophy and have similar logical APIs although they are implemented completely differently due to programming language and runtime environment restrictions. 
+
+In future the AI will know the AIDE-techkit and help you to find and integrate the most appropriate building blocks for your intended platform and your NFRs. You will end up with a professional T-system which can be used to implement your minimal valuable solution (MVS) from the A-perspective. Ideally the chosen T-configuration will not change very much during the development of your system.
+
+To give you an example: The AIDE Quiz contains three different mechanisms to support multiple languages: (a) Google Translator embedding, (b) DEEPL translated valuable content which is cached by the application server, (c) thoroughly internationalized (i18n) UI items, system messages etc
+Depending on the profile of you application you should be able to opt-IN or opt-OUT these different approaches.
+
+---
+
 ## Consequences for Computer Science Education
 
 We are preparing a paper that outlines the consequences of our findings for computer science education.
