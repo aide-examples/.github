@@ -15,7 +15,7 @@ If you want to contribute more AIDE Examples, contact the author personally.
 
 Agents can operate on par with experienced human software developers and contribute to impressive productivity gains. However, without stringent guidance, they quickly produce redundant, inconsistent, and poorly structured code mountains that no human wants to read anymore. And - even more importantly - humans can no longer take responsibility for the correct functioning of such systems.
 
-But there is another way.
+But there is a different way.
 
 AIDE proves that *it depends on us humans what comes out*. We can develop medium-sized systems with professional software architecture in collaboration with AI agents.
 
@@ -57,12 +57,12 @@ A good example of this is aviation. It's no coincidence that professional pilots
 
 **We derive the following guidelines for *human-periodically-in-the-loop*:**
 
-* The human must fundamentally possess sufficient competence to reliably comprehend at the detail level what the agent suggests or has produced. If a single human cannot do the jojb, then there must be several of them who are specialized in different technical artifacts (database design, performance optimization, etc.).
+* The human must fundamentally possess sufficient competence to reliably comprehend at the detail level what the agent suggests or has produced. If a single human cannot do the job, then there must be several of them who are specialized in different technical artifacts (database design, performance optimization, etc.).
 * The human must possess sufficient time and self-discipline to repeatedly take deep insights into machine-generated work results at critical points. Since we don't want to rely only on their good will, we must *periodically* compel them to do so. Hence the name.
 * There must be reviews by neutral third parties in which both the human and the machine must separately prove that each of them still has everything under control. We must learn to organize this process (quasi the simulator hour for software developers).
 * In our opinion also the AI must be challenged because we need to rely on its ability to defend existing arcitecture principles against loss of clarity or corruption. In analogy to "intrusion testing" we have a setting in mind where a human (or an adversarial AI) introduces bad changes into documentation or code and where we expect our trained AI agent to critisize and object.
 * Systematization and compulsion are only a safety net. Above all, the human must develop good instincts to recognize critical points. They must sense when it's good to watch the agent's hands very closely. Conversely, they must also recognize when to use it as a partner and advisor or when they can give it complete free rein.
-* The human may be happy that the agent takes care of tedious routine tasks, and they must know that they pay a price for it in the form of growing inner distance from technical results (like database definitions or source code). Keeping this distance at the right level - that is the central challenge of AIDE.
+* The human may be happy that the agent takes care of tedious routine tasks, but they must know that they pay a price for it in the form of growing inner distance from technical results (like database definitions or source code). Keeping this distance at the right level - that is the central challenge of AIDE.
 
 ---
 
@@ -72,15 +72,15 @@ A well designed software system clearly separates T-components and A-components,
 
 - To understand WHAT a system does you focus on (A), to understand HOW it does it your focus is on (T). 
 - When maintaining a productive system you are more or less captured within (T) and work on extending and changing (A).
-- Changing (T) in a running system requires considerable amounts of re-engineerineg effort which in most cases is economically not worth doing - unless your platform depends on external components which come to the end of their supported life span.
+- Changing (T) in a running system requires considerable amounts of re-engineerineg effort which in most cases is economically not worth doing - unless your platform depends on external components which come to the end of their supported life time.
 - When thinking about a new system the natural focus is on A-requirements but you need to be well aware of T-requirements (often called NFR = non-functional requirements).
-- When you start development of a new system you should begin with a rich and stable set of T components and a very tiny piece of A. This is the most critical phase of your project, because mistakes here a very expensive to correct.
+- When you start development of a new system you should begin with a rich and stable set of T components and a very tiny piece of A. This is the most critical phase of your project, because mistakes here will be very expensive to correct.
 
-Our long term goal is to *provide T-building blocks for that phase* which work well together and can be selected according to your needs. We call it the AIDE-techkit. Our idea is to extract almost all application related code from our AIDE systems so that we end up with standardized reusable T-components. Standardized means: They follow a common philosophy and have similar logical APIs although they are implemented completely differently due to programming language and runtime environment restrictions. 
+Our long term goal is to *provide T-building blocks for that phase* which work well together and can be selected according to your needs. We call it the AIDE-Techkit. Our idea is to extract almost all application related code from our AIDE systems so that we end up with standardized reusable T-components. Standardized means: They follow a common philosophy and have similar logical APIs although they are implemented differently due to programming language and runtime environment restrictions. 
 
-In future the AI will know the AIDE-techkit and help you to find and integrate the most appropriate building blocks for your intended platform and your NFRs. You will end up with a professional T-system which can be used to implement your minimal valuable solution (MVS) from the A-perspective. Ideally the chosen T-configuration will not change very much during the development of your system.
+In future the AI will know the AIDE-Techkit and help you to find and integrate the most appropriate building blocks for your intended platform and your NFRs. You will end up with a professional T-system which can be used to implement your minimal valuable solution (MVS) from the A-perspective. Ideally the chosen T-configuration will not change very much during the development of your system.
 
-To give you an example: The AIDE Quiz contains three different mechanisms to support multiple languages: (a) Google Translator embedding, (b) DEEPL translated valuable content which is cached by the application server, (c) thoroughly internationalized (i18n) UI items, system messages etc
+To give you an example: The AIDE Quiz contains three different mechanisms to support multiple languages: (a) Google Translator embedding, (b) DEEPL pre-translated valuable content which is cached by the application server, (c) thoroughly internationalized (i18n) UI items, system messages etc.
 Depending on the profile of you application you should be able to opt-IN or opt-OUT these different approaches.
 
 ---
