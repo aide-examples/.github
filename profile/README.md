@@ -39,6 +39,10 @@ The first AIDE application is an online quiz game with a relatively simple archi
 ### AIDE Solar
 The second AIDE application could be a technical system that transforms the energy of a solar panel so that it can charge USB devices. It should transmit data about the generated energy to a web host. Automated firmware updates are of course also part of it.
 
+### AIDE Knight
+This is a paper (not a system) describing how teaching the fundamentals of programming might benefit from Agentic Coding.
+The well-known chess knight's tour problem is often used to explain the concept of recursion. What can we gain and what will we lose if we delegate some work to an AI agent? 
+
 ---
 
 ## Human Periodically in the Loop
