@@ -2,7 +2,7 @@
 
 Our mission is to explore the intersection of AI and software engineering, providing practical examples for educational purpose.
 
-All project repositories were built in co-operation with AI agents (mainly *Anthropic Claude Monet*).
+All project repositories were built in co-operation with AI agents (mainly *Anthropic Claude Console*).
 Less than 2% of the documentation and code were manually crafted.
 
 ---
