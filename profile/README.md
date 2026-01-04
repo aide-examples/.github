@@ -1,4 +1,4 @@
-<img src="AIDE.jpg" align="left" style="margin-right:20px;width:200px;"/> **AIDE Examples** is a series of applications demonstrating how to build professional software using agent-based development.
+<img src="AIDE.jpg" align="left" style="margin-right:20px;width:200px;"/> **AIDE Examples** demonstrate how to build professional software using agent-based development.
 
 Our mission is to explore the intersection of AI and software engineering, providing practical examples for educational purpose.
 
@@ -27,21 +27,22 @@ The key to success is to *establish and maintain cooperation between human and a
 
 ## AIDE - Application Systems
 
-We plan to develop several systems from very different domains, from games to business information systems and social systems to technical applications (embedded systems).
+We plan to develop several *medium size systems* for different domains, from games to business information systems and social systems to technical applications (embedded systems). We also provide some *didactic material* based on small tasks, leading from zero to a well engineered script or a tiny system.
 
 The systems are intended to serve as demonstration objects in in-house training and at universities. They should be useful as starting points for further development or reengineering steps.
 
-We try to keep the requirements for the development and execution environment of AIDE systems as simple as possible. For embedded systems, however, this principle naturally has certain limits.
+### [AIDE - Quiz](https://github.com/aide-examples/aide-quiz) (medium size application)
+The first AIDE application is an online quiz game with a relatively simple architecture, consisting of a web UI and server components with a database. It currently comprises approximately 20,000 lines (code and documentation). This makes it complex enough to demonstrate certain principles of good design. At the same time, the application domain is so simple that it can be understood in a few minutes.
 
-### AIDE - Quiz
-The first AIDE application is an online quiz game with a relatively simple architecture of web UI and server components with a database. It currently comprises approximately 20,000 lines (code and documentation). This makes it complex enough to demonstrate certain principles of good design. At the same time, the domain is so simple that it can be understood in a few minutes.
+### AIDE Solar (not available yet)
+The second AIDE application could be a technical system that transforms the energy of a solar panel so that it can charge USB devices. It should transmit data about the generated energy to a web host. Automated firmware updates are of course also part of the design.
 
-### AIDE Solar
-The second AIDE application could be a technical system that transforms the energy of a solar panel so that it can charge USB devices. It should transmit data about the generated energy to a web host. Automated firmware updates are of course also part of it.
+### [AIDE Knight](https://github.com/aide-examples/aide-knight) (didactic material)
+This is a paper describing how teaching the fundamentals of programming might benefit from Agentic Coding.
+The well-known chess knight's tour problem is often used to explain the concept of recursion. What can we gain and what will we lose if we delegate some work to an AI agent? The paper describes the teaching process and presents some illustrative material line AI promts, AI responses, scripts produced and finally an animated graph produced by the latest iteration of the script.
 
-### AIDE Knight
-This is a paper (not a system) describing how teaching the fundamentals of programming might benefit from Agentic Coding.
-The well-known chess knight's tour problem is often used to explain the concept of recursion. What can we gain and what will we lose if we delegate some work to an AI agent? 
+### AIDE Shelly (didactic material)
+*Shelly* is a brand of the Bulgarian company *Allterco Robotics*, which specializes in the development of smart home solutions. Some devices use ESP32 processors and can be programmed via a web UI. There is a good API documentation available and the installed number of devices is pretty large. As they are also quite cheap we think they are ideal for teaching some apects of embedded systems design (though by far not all of it). We will show how to create scripts which allow interoperation of multiple devices behind a firewall and how to create an auto updater for shelly scripts.
 
 ---
 
@@ -72,7 +73,7 @@ A good example of this is aviation. It's no coincidence that professional pilots
 
 ## AIDE-Techkit : Building Blocks for Platform Construction
 
-A well designed software system clearly separates T-components and A-components, where T stands for TECHNICAL Architectue and A stands for APPLICATION Domain. Although there may be needs to intermix the physical manifestations of these components within artefacts (like introducing error handling code and logging at many places within the source code) conceptually T and A are different animals.
+A well designed software system clearly separates T-components and A-components, where **T** stands for TECHNICAL Architectue and **A** stands for APPLICATION Domain. Although there may be needs to intermix the physical manifestations of these components within artefacts (like introducing error handling code and logging at many places within the source code) conceptually T and A are different animals.
 
 - To understand WHAT a system does you focus on (A), to understand HOW it does it your focus is on (T). 
 - When maintaining a productive system you are more or less captured within (T) and work on extending and changing (A).
@@ -82,7 +83,7 @@ A well designed software system clearly separates T-components and A-components,
 
 Our long term goal is to *provide T-building blocks for that phase* which work well together and can be selected according to your needs. We call it the AIDE-Techkit. Our idea is to extract almost all application related code from our AIDE systems so that we end up with standardized reusable T-components. Standardized means: They follow a common philosophy and have similar logical APIs although they are implemented differently due to programming language and runtime environment restrictions. 
 
-In future the AI will know the AIDE-Techkit and help you to find and integrate the most appropriate building blocks for your intended platform and your NFRs. You will end up with a professional T-system which can be used to implement your minimal valuable solution (MVS) from the A-perspective. Ideally the chosen T-configuration will not change very much during the development of your system.
+We assume that your AI assistant will know the AIDE-Techkit and help you to find and integrate the most appropriate building blocks for your intended platform and your NFRs. You will end up with a professional T-system which can be used to implement your minimal valuable solution (MVS) from the A-perspective. Ideally the chosen T-configuration will not change very much during the development of your system.
 
 To give you an example: The AIDE Quiz contains three different mechanisms to support multiple languages: (a) Google Translator embedding, (b) DEEPL pre-translated valuable content which is cached by the application server, (c) thoroughly internationalized (i18n) UI items, system messages etc.
 Depending on the profile of you application you should be able to opt-IN or opt-OUT these different approaches.
