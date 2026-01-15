@@ -34,8 +34,13 @@ The systems are intended to serve as demonstration objects in in-house training 
 ### [AIDE - Quiz](https://github.com/aide-examples/aide-quiz) (medium size application)
 The first AIDE application is an online quiz game with a relatively simple architecture, consisting of a web UI and server components with a database. It currently comprises approximately 20,000 lines (code and documentation). This makes it complex enough to demonstrate certain principles of good design. At the same time, the application domain is so simple that it can be understood in a few minutes.
 
-### AIDE - Solar (not available yet)
-The second AIDE application could be a technical system that transforms the energy of a solar panel so that it can charge USB devices. It should transmit data about the generated energy to a web host. Automated firmware updates are of course also part of the design.
+### [AIDE - Frame](https://github.com/aide-examples/aide-frame) (small framework)
+A lightweight application framework with server-side (Python) and client-side (JS/CSS) components, especially suited for Raspberry Pi deployments.
+Originally it was part of aide-slideshow and was extracted from there. It is planned to provide a js server side implementation sonewhen in future. 
+Main featires are logging, config handling, remote update mechanism, internationalization, markdown viewer.
+
+### [AIDE - Frame Demo (Python)](https://github.com/aide-examples/aide-frame.demo-py) (small framework)
+A simple python program which demonstrates how to use the aide-frame components. Could be used as a starting point for your own project.
 
 ### [AIDE - Slideshow](https://github.com/aide-examples/aide-slideshow) (small system)
 This is a technical system running on a tiny raspberry (rpi zero 2WH) attached to a wall mounted screen. It can be controlled via a classical infrared control and via a web UI. It detects motion, ambient light and screen orientation. Images can be uploaded and prepared to match screen dimensions, add frames etc. We discussed with the AI how to keep the memory footprint of the system small enough to fit on that tiny device. The application also runs in the development environment where sensor hardware is replaced by stubs. Issues like remote software update, watchdog and protecting the systems against SD-card damage by sudden power loss are discussed.
@@ -44,9 +49,11 @@ This is a technical system running on a tiny raspberry (rpi zero 2WH) attached t
 This is a paper describing how teaching the fundamentals of programming might benefit from Agentic Coding.
 The well-known chess knight's tour problem is often used to explain the concept of recursion. What can we gain and what will we lose if we delegate some work to an AI agent? The paper describes the teaching process and presents some illustrative material line AI promts, AI responses, scripts produced and finally an animated graph produced by the latest iteration of the script.
 
-### AIDE Shelly (didactic material)
-*Shelly* is a brand of the Bulgarian company *Allterco Robotics*, which specializes in the development of smart home solutions. Some devices use ESP32 processors and can be programmed via a web UI. There is a good API documentation available and the installed number of devices is pretty large. As they are also quite cheap we think they are ideal for teaching some apects of embedded systems design (though by far not all of it). We will show how to create scripts which allow interoperation of multiple devices behind a firewall and how to create an auto updater for shelly scripts.
+### AIDE Shelly (not available yet)
+*Shelly* is a brand of the Bulgarian company *Allterco Robotics*, which specializes in the development of smart home solutions. Some devices use ESP32 processors and can be programmed via a web UI. There is a good API documentation available and the installed number of devices is pretty large. As they are also quite cheap we think taht they are ideal for teaching some apects of embedded systems design (though by far not all of them). We will show how to create scripts which allow interoperation of multiple devices behind a firewall and how to create an auto updater for shelly scripts.
 
+### AIDE - Solar (not available yet)
+The second AIDE application could be a technical system that transforms the energy of a solar panel so that it can charge USB devices. It should transmit data about the generated energy to a web host. Automated firmware updates are of course also part of the design.
 ---
 
 ## Human Periodically in the Loop
