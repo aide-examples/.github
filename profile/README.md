@@ -1,9 +1,9 @@
 <img src="AIDE.jpg" align="left" style="margin-right:20px;width:200px;"/> **AIDE Examples** demonstrate how to build professional software using agent-based development.
 
-Our mission is to explore the intersection of AI and software engineering, providing practical examples for educational purpose.
+We provide well-engineered practical examples for educational purposes - be it in classroom or for self-study.
 
-All project repositories were built in co-operation with AI agents (mainly *Anthropic Claude Console*).
-Less than 2% of the documentation and code were manually crafted.
+All projects were built in co-operation with AI agents (mainly *Anthropic Claude Console*).
+Less than 2% of source code and documentation were manually crafted.
 
 ---
 
