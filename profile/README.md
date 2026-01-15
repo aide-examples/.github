@@ -2,7 +2,7 @@
 
 We provide well-engineered practical examples for educational purposes - be it in classroom or for self-study.
 
-All [AIDE projects](#Projects:) were built in co-operation with AI agents (mainly *Anthropic Claude Console*).
+All AIDE projects were built in co-operation with AI agents (mainly *Anthropic Claude Console*).
 Less than 2% of source code and documentation were manually crafted.
 
 ---
