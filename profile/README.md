@@ -62,14 +62,14 @@ The first AIDE application is an online quiz game with a relatively simple archi
 
 ### [AIDE - Frame](https://github.com/aide-examples/aide-frame) (small framework)
 A lightweight application framework with server-side (Python) and client-side (JS/CSS) components, especially suited for Raspberry Pi deployments.
-Originally it was part of aide-slideshow and was extracted from there. It is planned to provide a js server side implementation sonewhen in future. 
-Main featires are logging, config handling, remote update mechanism, internationalization, markdown viewer.
+Originally it was part of aide-slideshow and was extracted from there. It is planned to provide a js server side implementation somewhen in future. 
+Main features are components for logging, config handling, remote update, internationalization and markdown viewing.
 
 ### [AIDE - Frame Demo (Python)](https://github.com/aide-examples/aide-frame.demo-py) (small framework)
-A simple python program which demonstrates how to use the aide-frame components. Could be used as a starting point for your own project.
+A tiny python program which demonstrates how to use the aide-frame components. Could be used as a starting point for your own project.
 
 ### [AIDE - Slideshow](https://github.com/aide-examples/aide-slideshow) (small system)
-This is a technical system running on a tiny raspberry (rpi zero 2WH) attached to a wall mounted screen. It can be controlled via a classical infrared control and via a web UI. It detects motion, ambient light and screen orientation. Images can be uploaded and prepared to match screen dimensions, add frames etc. We discussed with the AI how to keep the memory footprint of the system small enough to fit on that tiny device. The application also runs in the development environment where sensor hardware is replaced by stubs. Issues like remote software update, watchdog and protecting the systems against SD-card damage by sudden power loss are discussed.
+This is a technical system running on a raspberry (rpi zero 2WH) attached to a wall mounted screen. It can be controlled via a classical infrared control and via a web UI. It detects motion, ambient light and screen orientation. Images can be uploaded and prepared to match screen dimensions, add frames etc. We discussed with the AI how to keep the memory footprint of the system small enough to fit on that tiny device. The application also runs in the development environment where sensor hardware is replaced by stubs. Issues like remote software update are handled by the AIDE Framework. We explain how to protect the systems against SD-card damage by sudden power loss.
 
 ### [AIDE - Knight](https://github.com/aide-examples/aide-knight) (didactic material)
 This is a paper describing how teaching the fundamentals of programming might benefit from Agentic Coding.
