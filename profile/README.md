@@ -63,10 +63,10 @@ The first AIDE application is an online quiz game with a relatively simple archi
 ### [AIDE - Frame](https://github.com/aide-examples/aide-frame) (small framework)
 A lightweight application framework with server-side (Python/NodeJS) and client-side (HTML/CSS/JS) components, especially but not only suited for Raspberry Pi deployments. Originally it was part of aide-slideshow and was extracted from there. Then the franework was re-engineered and the serverside components were transpiled to jacascript so that aide-frame can now be used in both environements. Main features are components for logging, config handling, remote update, internationalization and markdown viewing.
 
-### [AIDE - Frame Demo (Python)](https://github.com/aide-examples/aide-frame.demo-py) (demo application)
+### [AIDE - Frame Demo (Python)](https://github.com/aide-examples/aide-frame-demo-py) (demo application)
 A tiny python program which demonstrates how to use the aide-frame components. Could be used as a starting point for your own project.
 
-### [AIDE - Frame Demo (JS)](https://github.com/aide-examples/aide-frame.demo-js) (demo application)
+### [AIDE - Frame Demo (JS)](https://github.com/aide-examples/aide-frame-demo-js) (demo application)
 A tiny Node JS program which demonstrates how to use the aide-frame components. Could be used as a starting point for your own project.
 
 ### [AIDE - Slideshow](https://github.com/aide-examples/aide-slideshow) (small system)
