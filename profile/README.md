@@ -1,13 +1,18 @@
-<img src="AIDE.jpg" align="left" style="margin-right:20px;width:200px;"/> **AIDE Examples** demonstrate how to build professional software using agent-based development.
+<img src="AIDE.jpg" align="left" style="margin-right:20px;width:300px;"/> **AIDE Examples** demonstrate how to build professional software using agent-based development.
 
 We provide well-engineered practical examples for educational purposes - be it in classroom or for self-study.
-
 All AIDE projects were built in co-operation with AI agents (mainly *Anthropic Claude Console*).
 Less than 2% of source code and documentation were manually crafted.
 
+| **Larg Project**         | [online quiz](https://github.com/aide-examples/aide-quiz)     |
+|:--------------------------|:--------------------------------------------------------------|
+| **Medium Project:**     | [slideshow](https://github.com/aide-examples/aide-slideshow)  
+| **Small Project:**        | [knight's tour](https://github.com/aide-examples/aide-knight) 
+| **Framework:**            | [framework](https://github.com/aide-examples/aide-frame) &bull; [python demo](https://github.com/aide-examples/aide-frame-demo-py) &bull; [javascript demo](https://github.com/aide-examples/aide-frame-demo-js) |
+|*Planned Projects:*        | Solar Inverter, Collection of Shelly Scripts |
 ---
 
-If you want to contribute more AIDE Examples, contact the author personally.
+If you want to contribute more AIDE Examples, contact the author *gero.scholz(at)gmail.com*
 
 ---
 
